@@ -25,6 +25,8 @@ Ensure the following intents are enabled:
 4. Instantiate the class with the following parameters: `bot`, `tree`, `filepath`, and optionally `guild_ids`.
 5. **Call `tree.sync()` *after* initializing `VcObserver()`; otherwise, commands will not sync.**
 
+If you're having trouble, please take a look at the example file at `src/app.py`.
+
 ## Behavior
 
 When a user connects, disconnects, or switches between voice channels, the bot logs their time spent in the previous channel to a JSON file.
