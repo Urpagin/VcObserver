@@ -29,8 +29,7 @@ async def on_ready():
     VcObserver(
         bot=client,
         tree=tree,
-        filepath=pathlib.Path("./vc_time_elapsed.json"),
-        guild_ids=[GUILD_ID]
+        filepath=pathlib.Path("./vc_time_elapsed.json")
     )
     # Register slash commands for this guild only
     await tree.sync(guild=Object(id=GUILD_ID))

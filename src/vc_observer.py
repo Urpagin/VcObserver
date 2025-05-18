@@ -279,6 +279,7 @@ class VcObserver:
             embed.description = "Aucune activité vocale enregistrée."
             return embed
 
+        # TODO: filter the ones outside of the member's guild.
         # Sort by descending order with the time as key.
         # Truncate to 25 (Discord allows up to 25 fields)
         sorted_stats: list[tuple[VoiceChannel, float]] = sorted(stats.items(), key=lambda x: x[1], reverse=True)[:25]
