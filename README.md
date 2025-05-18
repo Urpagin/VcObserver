@@ -1,4 +1,4 @@
-# VcObserver
+# VcObserver (Discord Bot plugin)
 
 A lightweight plugin to monitor how much time members spend in voice channels.
 
